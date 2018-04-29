@@ -1,0 +1,19 @@
+<mat-card>
+  <h1>{{ title }}</h1>
+  <div>
+    <button mat-flat-button (click)="onClick($event)" id="00" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[0][0] }}</button>
+    <button mat-flat-button (click)="onClick($event)" id="01" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[0][1] }}</button>
+    <button mat-flat-button (click)="onClick($event)" id="02" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[0][2] }}</button>
+  </div>
+  <div>
+    <button mat-flat-button (click)="onClick($event)" id="10" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[1][0] }}</button>
+    <button mat-flat-button (click)="onClick($event)" id="11" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[1][1] }}</button>
+    <button mat-flat-button (click)="onClick($event)" id="12" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[1][2] }}</button>
+  </div>
+  <div>
+    <button mat-flat-button (click)="onClick($event)" id="20" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[2][0] }}</button>
+    <button mat-flat-button (click)="onClick($event)" id="21" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[2][1] }}</button>
+    <button mat-flat-button (click)="onClick($event)" id="22" class="grid-button" disabled="{{ this.buttonsDisabled }}">{{ this.grid[2][2] }}</button>
+  </div>
+  <div><button mat-raised-button>My button!</button></div>
+</mat-card>
